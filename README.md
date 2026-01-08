@@ -83,7 +83,7 @@ Server owners retain **full control** through permissions and a detailed configu
 
 This is the default and simplest setup.
 
-1. Download `SorekillTeams-1.1.9.jar`
+1. Download `SorekillTeams-x.x.x.jar`
 2. Place it in your server’s `plugins/` directory
 3. Start or restart the server
 4. Configure permissions (**LuckPerms recommended**)
