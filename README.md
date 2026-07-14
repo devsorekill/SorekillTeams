@@ -71,8 +71,8 @@ Server owners retain **full control** through permissions and a detailed configu
 
 ## Requirements
 
-- **Java 21**
-- **Paper or Spigot 1.21.x**
+- **Java 21** for Minecraft 1.21.x; **Java 25** for Minecraft 26.1+
+- **Spigot or Paper 1.21.x, 26.1.2, or 26.2**
 - *(Optional)* PlaceholderAPI 2.11.0+
 - *(Optional)* MiniPlaceholders 3.0+
 
