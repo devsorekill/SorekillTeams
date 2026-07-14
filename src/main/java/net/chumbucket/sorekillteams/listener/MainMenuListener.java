@@ -65,7 +65,7 @@ public final class MainMenuListener implements Listener {
         }
 
         if (close) {
-            plugin.getServer().getScheduler().runTask(plugin, p::closeInventory);
+            plugin.getServer().getScheduler().runTask(plugin, (Runnable) p::closeInventory);
         }
     }
 

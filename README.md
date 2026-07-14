@@ -6,7 +6,7 @@ Designed for modern servers and future proxy networks, SorekillTeams focuses on 
 
 ---
 
-## 🆕 Latest Release — 1.2.1
+## 🆕 Latest Release — 1.2.2
 
 ### Changelog
 
@@ -60,7 +60,7 @@ Server owners retain **full control** through permissions and a detailed configu
 - **Safe storage system**
   - YAML or SQL storage
   - Autosave, atomic writes, and rolling backups
-- **Paper & Spigot compatible**
+- **Spigot and Paper compatible across 1.21.x, 26.1.2, and 26.2**
 - **Optional placeholder support**
   - PlaceholderAPI and MiniPlaceholders
 - **Lightweight and focused**
@@ -70,8 +70,8 @@ Server owners retain **full control** through permissions and a detailed configu
 
 ## Requirements
 
-- **Java 21**
-- **Paper or Spigot 1.21.x**
+- **Java 21** for Minecraft 1.21.x; **Java 25** for Minecraft 26.1+
+- **Spigot or Paper 1.21.x, 26.1.2, or 26.2**
 - *(Optional)* PlaceholderAPI 2.11.0+
 - *(Optional)* MiniPlaceholders 3.0+
 

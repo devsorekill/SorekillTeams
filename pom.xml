@@ -9,7 +9,7 @@
 
   <groupId>net.chumbucket</groupId>
   <artifactId>SorekillTeams</artifactId>
-  <version>1.2.1</version>
+  <version>1.2.2</version>
   <packaging>jar</packaging>
   <name>SorekillTeams</name>
 
@@ -20,8 +20,10 @@
     <java.version>21</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-    <!-- Paper / Spigot -->
-    <spigot.api.version>1.21.4-R0.1-SNAPSHOT</spigot.api.version>
+    <!-- Shared Spigot API baseline; CI also compiles against Spigot/Paper 26.x. -->
+    <server.api.group>org.spigotmc</server.api.group>
+    <server.api.artifact>spigot-api</server.api.artifact>
+    <server.api.version>1.21-R0.1-SNAPSHOT</server.api.version>
 
     <!-- Optional integrations -->
     <placeholderapi.version>2.11.7</placeholderapi.version>
@@ -53,6 +55,12 @@
   <!-- Repositories -->
   <!-- ========================================================= -->
   <repositories>
+
+    <!-- Paper API (also contains the Bukkit API) -->
+    <repository>
+      <id>papermc</id>
+      <url>https://repo.papermc.io/repository/maven-public/</url>
+    </repository>
 
     <!-- Spigot snapshots -->
     <repository>
@@ -91,11 +99,11 @@
   <!-- ========================================================= -->
   <dependencies>
 
-    <!-- Spigot API (Paper-compatible) -->
+    <!-- Server API (runtime-provided) -->
     <dependency>
-      <groupId>org.spigotmc</groupId>
-      <artifactId>spigot-api</artifactId>
-      <version>${spigot.api.version}</version>
+      <groupId>${server.api.group}</groupId>
+      <artifactId>${server.api.artifact}</artifactId>
+      <version>${server.api.version}</version>
       <scope>provided</scope>
     </dependency>
 
